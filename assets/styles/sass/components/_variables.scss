@@ -1,0 +1,18 @@
+// colors
+$background: #E5E5E5;
+$neutral-dark: #A2ADC5;
+$neutral-light:#F1F1F5;
+$text-color: #32325D;
+$button-color: #6161A6;
+$yellow: #FAB150;
+$tags-yellow: rgba(250, 177, 80, .5);
+$tags-greyish: rgba(190, 188, 207, .5);
+$item-division: #BEBCCF;
+
+// text color
+p, a, h1, h2, h3, h4, label, .material-icons {
+  color: $text-color;
+}
+
+// main card width
+$var-card-width: calc(100vw - 30px);

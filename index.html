@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart - 04 training</title>
+  <link rel="stylesheet" href="assets/styles/css/style.css">
+  <!-- google fonts - roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <!-- https://material.io/resources/icons/?style=baseline -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+  <!-- https://material.io/resources/icons/?style=outline -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- https://material.io/resources/icons/?style=round -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+  <!-- https://material.io/resources/icons/?style=sharp -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <!-- https://material.io/resources/icons/?style=twotone -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- wrapper starts  -->
+  <div class="wrapper">
+    <!-- header starts -->
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav__menu">
+          <!-- logo -->
+          <li>
+            <a class="burger" href="#">
+              <span class="material-icons">
+                menu
+                </span>
+            </a>
+          </li>
+          <li> <a href="#"><img src="assets/images/logo.png" alt="logo" class="logo"></a></li>
+          <li>
+            <div class="header__nav__menu__button">
+              <a href="#">QUESTIONS & REPONSES
+                <span class="material-icons">
+                  keyboard_arrow_down
+                </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="header__nav__menu__button">
+              <a href="#">AGENT CONVERSATIONNEL
+                <span class="material-icons">
+                  keyboard_arrow_down
+                </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="header__nav__menu__button">
+              <a href="#">MACHINE LEARNING
+                <span class="material-icons">
+                  keyboard_arrow_down
+                </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="header__nav__menu__button">
+              <a href="#">STATISTIQUES
+                <span class="material-icons">
+                  keyboard_arrow_down
+                </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="header__nav__menu__button">
+              <a href="#">RÉGLAGES
+                <span class="material-icons">
+                  keyboard_arrow_down
+                </span>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+        <div class="header__nav__right">
+          <div class="header__nav__right__select-lang">
+            <!-- <p>Base de connnaissance ST</p> -->
+            <a href="#">Français
+              <span class="material-icons">
+                keyboard_arrow_down
+              </span>
+            </a>
+          </div>
+          <div class="header__nav__right__users">
+            <span class="header__nav__right__users__user">M</span>
+            <span class="header__nav__right__users__user">ST</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header ends -->
+    <!-- sidebar starts -->
+    <!-- main content starts -->
+    <main class="main">
+      <!-- breadcumb starts -->
+      <div class="main__nav-breadcrumb">
+        <h1>Contenus</h1>
+        <ul class="main__nav-breadcrumb__crumbs">
+          <li>
+            <a href="#">
+              Retour au dashboard</a>
+          </li>
+          <li>
+            <a href="#"> > </a>
+          </li>
+          <li>
+            <a href="#">Contenus</a>
+          </li>
+          <li>
+            <a href="#"> > </a>
+          </li>
+          <li>
+            <a href="#">Questions</a>
+          </li>
+        </ul>
+      </div>
+      <!-- breadcumb ends -->
+      <!-- button on the right starts -->
+      <div class="main__question">
+        <button class="button">Nouvelle question</button>
+      </div>
+      <!-- button on the right ends -->
+      <!-- sidebar starts -->
+      <aside class="sidebar">
+        <div class="sidebar__filters">
+          <span class="sidebar__filters__rectangle"></span>
+          <div class="sidebar__filters__button">
+            <span class="material-icons">
+              arrow_right
+            </span>
+            <a class="filter" href="#">Filter</a>
+          </div>
+          <span class="sidebar__filters__rectangle"></span>
+          <div class="sidebar__filters__button">
+            <span class="material-icons">
+              arrow_right
+            </span>
+            <a class="export" href="#">Export</a>
+          </div>
+        </div>
+      </aside>
+      <!-- sidebar ends -->
+      <!-- card starts -->
+      <div class="main__card">
+        <nav class="card__header">
+           <ul class="card__header__nav">
+            <li>
+              <div class="card__header__nav__checkbox">
+                <input type="checkbox" id="select" class="checkbox" name="select" value=unchecked>
+                <label for="select">Tout sélectionner
+                </label>
+              </div>
+            </li>
+            <li class="card__header__nav__searchbar">
+              <span class="material-icons">
+                search
+              </span>
+              <input type="search" id="search" class="search" name="q" placeholder="Rechercher des questions">
+            </li>
+            <li>
+              <div class="card__header__nav__button">
+                <a class="trier" href="#">Trier par</a>
+                <div class="card__header__nav__button__date">
+                <a class="dates" href="#">Date de modification</a>
+                <a class="material-icons" href="#">
+                  keyboard_arrow_down
+                </a>
+              </div>
+              </div>
+            </li>
+            <li>
+              <a class="card__header__nav__arrowup" href="#">
+                <span class="material-icons">
+                  arrow_upward
+                </span>
+              </a>
+            </li>
+          </ul>
+          <!-- card header ends -->
+          <!-- card text content start -->
+          <ul class="items">
+            <li class="items__item">
+              <div class="items__item__content">
+                <div class="items__item__content__text">
+                  <span class="material-icons">
+                    check_box
+                  </span>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium ?
+                  </p>
+                </div>
+                <div class="items__item__content__icons">
+                  <a href="#">
+                    <span class="material-icons">
+                      help
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="assets/images/square.png" alt="square" class="square">
+                    <!-- <img src="assets/images/sound.png" alt="sound" class="sound"> -->
+                  </a>
+                </div>
+              </div>
+              <div class="items__item__tags">
+                <a href="#">Catégorie</a>
+                <a href="#">Tag</a>
+              </div>
+              <span class="items__item__modified">
+                Modifié de 28/09/2021
+              </span>
+            </li>
+            <li class="items__item">
+              <div class="items__item__content">
+                <div class="items__item__content__text">
+                  <span class="material-icons">
+                    check_box
+                  </span>
+                  <p>
+                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumdoloremque laudantiumdoloremque laudantium laudantium ?
+                  </p>
+                </div>
+                <div class="items__item__content__icons">
+                  <a href="#">
+                    <span class="material-icons">
+                      help
+                    </span>
+                  </a>
+                  <!-- <a href="#">
+                  <img src="assets/images/square.png" alt="square" class="square">
+                  <img src="assets/images/sound.png" alt="sound" class="sound">
+                  </a> -->
+                </div>
+              </div>
+              <div class="items__item__tags">
+                <a href="#">Catégorie</a>
+                <a href="#">Tag</a>
+              </div>
+              <span class="items__item__modified">
+                Modifié de 28/09/2021
+              </span>
+            </li>
+            <li class="items__item">
+              <div class="items__item__content">
+                <div class="items__item__content__text">
+                  <span class="material-icons">
+                    check_box
+                  </span>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium ?
+                  </p>
+                </div>
+                <div class="items__item__content__icons">
+                  <a href="#">
+                    <span class="material-icons">
+                      help
+                    </span>
+                  </a>
+                  <a href="#">
+                    <img src="assets/images/square.png" alt="square" class="square"></a>
+                  <a href="#">
+                    <img src="assets/images/sound.png" alt="sound" class="sound">
+                  </a>
+                </div>
+              </div>
+              <div class="items__item__tags">
+                <a href="#">Catégorie</a>
+                <a href="#">Tag</a>
+              </div>
+              <span class="items__item__modified">
+                Modifié de 28/09/2021
+              </span>
+            </li>
+            <li class="items__item">
+              <div class="items__item__content">
+                <div class="items__item__content__text">
+                  <span class="material-icons">
+                    check_box
+                  </span>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium ?
+                  </p>
+                </div>
+                <div class="items__item__content__icons">
+                  <a href="#">
+                    <span class="material-icons">
+                      help
+                    </span></a>
+                  <a href="#">
+                    <img src="assets/images/square.png" alt="square" class="square">
+                  </a>
+                  <!--<a href="#"> <img src="assets/images/sound.png" alt="sound" class="sound"> </a>-->
+                </div>
+              </div>
+              <div class="items__item__tags">
+                <a href="#">Catégorie</a>
+                <a href="#">Tag</a>
+              </div>
+              <span class="items__item__modified">
+                Modifié de 28/09/2021
+              </span>
+            </li>
+            <li class="items__item">
+              <div class="items__item__content">
+                <div class="items__item__content__text">
+                  <span class="material-icons">
+                    check_box
+                  </span>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium ?
+                  </p>
+                </div>
+                <div class="items__item__content__icons">
+                  <a href="#">
+                    <span class="material-icons">
+                      help
+                    </span></a>
+                  <a href="#">
+                    <img src="assets/images/square.png" alt="square" class="square">
+                  </a>
+                  <a href="#"> <img src="assets/images/sound.png" alt="sound" class="sound"> </a>
+                </div>
+              </div>
+              <div class="items__item__tags">
+                <a href="#">Catégorie</a>
+                <a href="#">Tag</a>
+              </div>
+              <span class="items__item__modified">
+                Modifié de 28/09/2021
+              </span>
+            </li>
+            
+
+          </ul> 
+
+          <!-- card text content ends -->
+        </nav>
+      </div>
+      <!-- card ends -->
+    </main>
+    <!-- main content ends -->
+  </div>
+  <!-- wrapper ends -->
+
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

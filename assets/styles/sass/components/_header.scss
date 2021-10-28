@@ -1,0 +1,159 @@
+@use "sass:map";
+@use "mixins"as *;
+@use "variables"as *;
+@use "fonts"as *;
+
+.header {
+  grid-row: 1;
+  border-bottom: 1px solid $neutral-dark;
+
+  &__nav {
+    @include flex(space-between, center, row);
+    background: $background;
+    width: 100vw;
+    height: 57px;
+    position: relative;
+    padding-left: 24px;
+
+    @include breakpoint(mobile) {
+      @include flex(center, center, row);
+    }
+
+    .burger {
+      display: none;
+
+      @include breakpoint(mobile) {
+        display: inline;
+        position: absolute;
+        top: 12px;
+        left: 26px;
+      }
+    }
+
+    .logo {
+      transform: translate(0, 3px);
+      width: 86px;
+
+      @include breakpoint(mobile) {
+        transform: translate(0, 3px);
+        width: 86px;
+        text-align: center;
+      }
+    }
+
+    //header top menu
+    &__menu {
+      @include flex(flex-start, center, row);
+
+
+      &__button {
+        padding-right: 28px;
+        @include flex(space-between, end, row);
+        font-weight: map.get($font-weight, regular);
+        font-size: 12px;
+        line-height: 2em;
+
+        .material-icons {
+          @include position(relative, 7px, null, null, 11px);
+          font-size: 24px;
+          font-weight: map.get($font-weight, medium);
+        }
+
+        //top menu positioning
+        &:first-child {
+          // logo width 86px + padding-right 32px
+          padding-left: 32px;
+        }
+
+        @include breakpoint(mobile) {
+          display: none;
+        }
+      }
+    }
+
+    // header top-right block
+    &__right {
+      margin-right: 30px;
+      @include flex (flex-start, center, row);
+
+      @include breakpoint(mobile) {
+        display: none;
+      }
+
+      // select
+      &__select-lang {
+        @include position(relative, null, null, null, null);
+        background-color: white;
+        border: none;
+        width: 209px;
+        height: 32px;
+        margin-right: 20px;
+        border-radius: 5px;
+        display: inline-block;
+
+        // languege text
+        a {
+          @include position(relative, 8px, null, null, 20px);
+          font-weight: map.get($font-weight, regular);
+          font-size: 12px;
+          display: block;
+        }
+
+        // language arrow
+        .material-icons {
+          font-size: 24px;
+          @include position(absolute, -5px, 36px, null, null);
+          display: inline;
+          font-weight: map.get($font-weight, medium);
+
+        }
+      }
+
+      // users
+      &__users {
+        &__user {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50%;
+          text-align: center;
+          background: yellow;
+          margin-left: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    //header bottom menu
+    &__bottom {
+      background-color: blue;
+    }
+  }
+
+  // @include breakpoint(mobile) {
+  //   &__nav {
+  //     @include flex(flex-start, center, row);
+
+  //     &__menu {
+  //       .burger {
+  //         display: inline;
+  //       }
+
+  //       .logo {
+  //         transform: translate(0, 3px);
+  //         width: 86px;
+  //         text-align: center;
+  //       }
+
+  //       &__button {
+  //         display: none;
+  //       }
+  //     }
+
+  //     &__right {
+  //       display: none;
+  //     }
+  //   }
+  // }
+}

@@ -1,0 +1,42 @@
+@use "components"as *;
+@use "sass:map";
+
+
+html {
+  background: white;
+  font-size: 16px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 58px 77px 764px;
+  height: 100vh;
+  @include breakpoint(mobile) {
+    grid-template-rows: 58px 77px 1fr 1fr 1fr;
+
+  }
+}
+
+  // .header {
+  //   &__nav {
+  //     @include flex(flex-start, center, row);
+
+  //     &__menu {
+  //       .burger {
+  //         display: inline;
+  //       }
+  //       .logo {
+  //         transform: translate(0, 3px);
+  //         width: 86px;
+  //         text-align: center;
+  //       }
+  //       &__button {
+  //         display: none;
+  //       }
+  //     }
+  //     &__right {
+  //       display: none;
+  //     }
+  //   }
+  // }
+

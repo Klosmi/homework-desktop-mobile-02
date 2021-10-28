@@ -1,0 +1,72 @@
+// flex box
+@mixin flex ($jcontent, $aitems, $direction) {
+  display: flex;
+  justify-content: $jcontent;
+  align-items: $aitems;
+  flex-direction: $direction;
+}
+
+// width calculation for header
+@mixin main-width {
+  // width: $var-main-width;
+}
+
+// position
+@mixin position ($post-type, $top, $right, $bottom, $left) {
+  position: $post-type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// media queries
+@mixin breakpoint($point) {
+  @if $point == mobile {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
+  // @else if $point==laptop {
+  //   @media screen and(max-width: 768px) {
+  //     @content;
+  //   }
+  // }
+  // @else if $point==desktop {
+  //   @media screen and(max-width: 1224px) {
+  //     @content;
+  //   }
+  // }
+}
+
+// yellow rectangle on the sidebar
+// @mixin rectangle ($top, $left, $color) {
+//   position: relative ;
+
+// //   &::after
+// //   {
+// //     content: '';
+// //     position: absolute;
+// //     top: $top;
+// //     top: $top;
+// //     left: $left;
+// //     background: $color;
+// //     width: 7px;
+// //     height: 47px;
+// //     @include breakpoint(mobile) {
+// //       height: 63px;
+// //     }
+// //   }
+  
+// // }
+
+
+
+// @mixin media($width) {
+//   @media only screen and (max-width: $width) {
+//     @content;
+//   }
+// }
+// @include media(576px) {
+//   background: red;
+// }
