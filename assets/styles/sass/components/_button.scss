@@ -1,0 +1,35 @@
+@use "mixins"as *;
+@use "variables"as *;
+@use "fonts"as *;
+@use "sass:map";
+
+
+.main__question {
+  grid-row: 2;
+  grid-column: 2;
+  text-align: right;
+  margin: 17px 30px 0 0;
+
+  @include breakpoint(mobile) {
+    grid-row: 4;
+    grid-column: 1;
+    text-align: center;
+    margin: 12px;
+  }
+
+  .button {
+    width: 193px;
+    height: 47px;
+    background-color: $button-color;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: map.get($font-weight, medium);
+    font-size: 14px;
+
+    @include breakpoint(mobile) {
+      width: 100%;
+      text-align: center; 
+    }
+  }
+}
